@@ -39,6 +39,7 @@ public class UserInterface {
 
 
 
+
     public void createUIComponents() {
         // TODO: place custom component creation code here
         String[] columnNames = {"ProcessID", "Resource A", "Resource B", "Resource C"};

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UserInterface">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="10" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="931" height="588"/>
+    </constraints>
+    <properties>
+      <name value="MainPanel"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <hspacer id="17170">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <scrollpane id="38b59" binding="MaxScrollPane">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="320" height="180"/>
+            <preferred-size width="320" height="180"/>
+            <maximum-size width="320" height="180"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Max Resources:  " title-justification="2"/>
+        <children>
+          <component id="1f382" class="javax.swing.JTable" binding="MaxTable" custom-create="true">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <editingColumn value="-1"/>
+              <editingRow value="-1"/>
+              <name value="MaxTable"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="5153b" binding="AllocatedScrollPane">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="320" height="180"/>
+            <preferred-size width="320" height="180"/>
+            <maximum-size width="320" height="180"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Allocated Resources" title-justification="2"/>
+        <children>
+          <component id="1fb4f" class="javax.swing.JTable" binding="AllocatedTable" custom-create="true">
+            <constraints/>
+            <properties>
+              <name value="AllocatedTable"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="280d2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="4" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Resources Needed"/>
+        </properties>
+      </component>
+      <component id="f92ac" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Resource A"/>
+        </properties>
+      </component>
+      <component id="f5dfd" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <name value="ResourceAInput"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f1d5b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Resource B"/>
+        </properties>
+      </component>
+      <component id="c9fb7" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <name value="ResourceBInput"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9c568" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Resource C"/>
+        </properties>
+      </component>
+      <component id="e6c6b" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <name value="ResourceCInput"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e7904" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ProcessID"/>
+        </properties>
+      </component>
+      <component id="60f99" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <name value="ProcessIDInput"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <scrollpane id="948e1" binding="NeedScrollPane">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="320" height="180"/>
+            <preferred-size width="320" height="180"/>
+            <maximum-size width="320" height="180"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Need Resources" title-justification="2"/>
+        <children>
+          <component id="a9a9d" class="javax.swing.JTable" binding="NeedTable" custom-create="true">
+            <constraints/>
+            <properties>
+              <name value="NeedTable"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="c472d" binding="AvailableScrollPane">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="320" height="60"/>
+            <preferred-size width="320" height="60"/>
+            <maximum-size width="320" height="60"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Available Resources" title-justification="2"/>
+        <children>
+          <component id="45855" class="javax.swing.JTable" binding="AvailableTable" custom-create="true">
+            <constraints/>
+            <properties>
+              <name value="AvailableTable"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="d6b5b" class="javax.swing.JButton" binding="applyButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="Apply_Button"/>
+          <text value="Apply"/>
+        </properties>
+      </component>
+      <component id="a7c2e" class="javax.swing.JButton" binding="resetButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="Reset_Button"/>
+          <text value="Reset"/>
+        </properties>
+      </component>
+      <component id="b57df" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="                     "/>
+        </properties>
+      </component>
+      <component id="ec3ef" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="                                     "/>
+        </properties>
+      </component>
+      <component id="d974" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="                                    "/>
+        </properties>
+      </component>
+      <component id="e0085" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="7" row-span="9" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="        "/>
+        </properties>
+      </component>
+      <component id="319b8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="9" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="        "/>
+        </properties>
+      </component>
+      <component id="5cce1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="                "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

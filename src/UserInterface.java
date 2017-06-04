@@ -25,6 +25,8 @@ public class UserInterface {
     private JScrollPane NeedScrollPane;
     private JScrollPane AvailableScrollPane;
 
+    public JTextField[] requests = {textField2, textField3, textField4};
+
 
     public UserInterface(){
         JFrame frame = new JFrame("UserInterface");
@@ -54,6 +56,10 @@ public class UserInterface {
 //        Object[][] AllocationMatrix = {{0,0,3,0},{1,3,0,2},{2,3,0,2},{3,2,1,1},{4,0,0,2}};
 //        Object[][] AvailableVector = {{2,1,0}};
 
+//        Object[][] MaxMatrix = {{0,7,5,3},{1,3,2,2},{2,9,0,2},{3,2,2,2},{4,4,3,3}};
+//        Object[][] NeedMatrix = {{0,7,4,3},{1,0,2,0},{2,6,0,0},{3,0,1,1},{4,4,3,1}};
+//        Object[][] AllocationMatrix = {{0,0,1,0},{1,3,0,2},{2,3,0,2},{3,2,1,1},{4,0,0,2}};
+//        Object[][] AvailableVector = {{2,3,0}};
 
 
         DefaultTableModel MaxModel = new DefaultTableModel(MaxMatrix, columnNames) {

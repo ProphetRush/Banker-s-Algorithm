@@ -3,7 +3,9 @@
  */
 public class Main {
     public static void main(String[] args) {
-        UserInterface userInterface = new UserInterface();
-        Controller controller = new Controller(userInterface);
+        Controller.init();
+//        UserInterface userInterface = new UserInterface();
+//        Controller controller = new Controller(userInterface);
+
     }
 }
